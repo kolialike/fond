@@ -1,0 +1,90 @@
+.project-content
+	background-color: #f7fbfe
+	position: relative
+	background-image: image-url("bg.jpg")
+	background-repeat: no-repeat
+	background-position: top center
+	margin-top: -127px
+	padding-top: 127px
+	z-index: 1
+	padding-bottom: 90px
+	.swiper-button-next:before,
+	.swiper-button-prev:before
+		color: #7f878d
+		display: inline-block
+		font-size: 35px
+	.swiper-button-next
+		&:before 
+			+font-icon("next")
+	.swiper-button-prev
+		&:before
+			+font-icon("back")
+	.swiper-container
+		padding-top: 87px
+		margin-top: -87px
+.project-item
+	// width: 280/1200*100%
+	// margin-left: 20/1200*100%
+	display: block
+	text-decoration: none
+	// margin-bottom: 20px
+	overflow: hidden
+	// float: left
+	h5
+		margin-top: 30px
+		margin-bottom: 20px
+		height: 45px
+		color: #3f4951
+		font-size: 16px
+		line-height: 18px
+	p 
+		font-size: 14px
+		color: #525c63
+		line-height: 16px
+		margin-bottom: 12px
+	span
+		font-size: 16px
+		color: #f98a0b
+		line-height: 18px
+		font-family: 'Open Sans', sans-serif
+		font-weight: 600
+		small
+			font-weight: 400
+	.project-item-text-l	
+		float: left
+		text-align: left
+	.project-item-text-r	
+		float: right
+		text-align: right		
+.project-item-img
+	height: 225px
+	display: block
+	img 
+		display: block
+		height: 100%
+		width: 100%
+		object-fit: cover
+.linerel
+	height: 5px
+	background: #8596a4
+	margin-bottom: 10px
+	width: 100%
+	overflow: hidden
+	span
+		background-color: #fbb711 
+		background-image: -webkit-linear-gradient(right, #de8c2f #fbb711) 
+		background-image: -moz-linear-gradient(right, #de8c2f #fbb711) 
+		background-image: -o-linear-gradient(right, #de8c2f #fbb711)
+		background-image: linear-gradient(right, #de8c2f #fbb711)
+		height: 100%
+		float: left
+		transition: 0.3s
+		position: relative
+		&:after
+			content: ""
+			position: absolute
+			right: -6px
+			top: 0
+			border: 3px solid
+			border-color: #de8c2f transparent transparent #de8c2f
+			transition: 0.3s

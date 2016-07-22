@@ -1,0 +1,60 @@
+.event-content-container
+	+pie-clearfix
+.event-content
+	margin-left: -20px
+.event-content-item
+	margin-left: 20px
+	width: 280px
+	float: left
+	height: 250px
+	position: relative
+	&:before
+		content: ''
+		width: 100%
+		height: 100%
+		display: block
+		background: rgba(#171819, 0.71)
+		position: absolute
+		top: 0
+		right: 0
+		bottom: 0
+		left: 0
+		z-index: 1
+	h5
+		position: absolute
+		top: 50%
+		right: 0
+		left: 0
+		margin-top: -17px
+		color: #fff 
+		font-size: 30px
+		line-height: 32px
+		z-index: 2
+		font-family: 'Open Sans', sans-serif
+		display: block
+		text-align: center
+		img 
+			margin-left: 20px
+	p
+		position: absolute
+		font-size: 18px
+		line-height: 20px
+		bottom: 20px
+		z-index: 2
+		color: #fff
+		right: 0
+		left: 0
+		display: block
+		text-align: center
+.event-content-item-last
+	h5 
+		font-size: 20px
+.event-content-item-img
+	position: relative
+	display: block
+	width: 100%
+	img 
+		width: 100%
+		height: 100%
+		object-fit: cover
+		display: block

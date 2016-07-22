@@ -1,0 +1,98 @@
+
+.flex-content
+	display: flex
+	align-items: center
+	flex-direction: row
+	height: 460px
+	border: 2px solid #e9eff5
+	+box-sizing(border-box)
+	justify-content: space-between
+	background: #fff
+	z-index: 2
+	position: relative
+.flex-content-text	
+	height: 230px
+	padding: 30px
+	+box-sizing(border-box)
+	position: relative
+	+transition(0.3s)
+	&:after
+		content: ''
+		display: block
+		width: 0
+		height: 0
+		border-left: 15px solid transparent
+		border-right: 15px solid transparent
+		border-top: 15px solid #fff
+		position: absolute
+		bottom: -15px
+		left: 30px
+		z-index: 1
+		+transition(0.3s)
+	&:nth-child(1n+2)
+		&:after
+			display: none
+	h4 
+		color: #0089d0
+		font-size: 18px
+		line-height: 24px
+	.flex-content-text-bottom
+		position: absolute
+		bottom: 30px
+		left: 30px
+	p 
+		color: #34475a
+		font-size: 16px
+		line-height: 20px
+		margin-bottom: 7px
+		display: block
+	span 
+		color: #8c9cab
+		font-size: 14px
+		line-height: 18px
+		font-family: 'Open Sans', sans-serif
+		display: block
+
+.flex-content-img
+	height: 230px
+	+transition(0.3s)
+	position: relative
+	&:after
+		content: ''
+		display: block
+		width: 0
+		height: 0
+		border-left: 15px solid transparent
+		border-right: 15px solid transparent
+		border-bottom: 15px solid #fff
+		position: absolute
+		bottom: 0px
+		left: 30px
+		z-index: 1
+		+transition(0.3s)
+	&:nth-child(1n+2)
+		&:after
+			display: none
+	img 
+		display: block
+		width: 100%	
+		height: 100%
+		object-fit: cover
+.flex-content-item
+	width: 25.086%
+	text-decoration: none
+	margin: 0px -2px
+	&:hover
+		.flex-content-text	
+			background: #0089d0
+			h4 
+				color: #fff
+			p 
+				color: #bbd9f6
+			span 
+				color: #85b5e4
+			&:after
+				border-top: 15px solid #0089d0
+		.flex-content-img
+			&:after
+				border-bottom: 15px solid #0089d0

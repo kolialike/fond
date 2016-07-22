@@ -1,0 +1,41 @@
+.mail-content
+	background: #0089d0
+	+pie-clearfix
+	position: relative
+	margin-top: 115px
+	p 
+		display: inline-block
+		font-size: 16px
+		color: #fff 
+		line-height: 18px
+		margin: 55px 0px 37px 357px
+	form 
+		float: right
+		input[type="email"]
+			border: none
+			outline: none
+			+border-radius(2px)
+			height: 45px
+			width: 335px
+			margin-right: 40px
+			+box-sizing(border-box)
+			padding: 10px
+		input[type="submit"]
+			background: #fbb31e
+			border: none
+			outline: none
+			+border-radius(2px)
+			padding: 50px 25px 40px
+			font-size: 18px
+			line-height: 20px
+			color: #fff
+			cursor: pointer
+			+transition(0.3s)
+			&:hover
+				background: #ffc44c
+			&:active
+				background: #aa7200
+.mail-content-img
+	position: absolute
+	left: 35px
+	top: -20px

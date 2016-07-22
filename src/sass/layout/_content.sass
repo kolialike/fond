@@ -1,0 +1,135 @@
+@import content/flex-content-container
+@import content/project-content
+@import content/event-content
+@import content/mail-content
+@import content/partners-content
+@import content/kontact-content
+section
+	.wrapper
+		&>h3
+			color: #3e4951
+			font-size: 30px
+			line-height: 32px
+			font-weight: 700
+			display: block
+			border-bottom: 2px solid #f0f6fb
+			padding-bottom: 20px
+			position: relative
+			padding-top: 95px
+			margin-bottom: 33px
+			padding-left: 12px
+			&:after
+				content: ''
+				display: block
+				width: 100px
+				height: 2px
+				position: absolute
+				bottom: -2px
+				left: 0
+				background: #0089d0
+.main-content 
+	clear: both
+	position: relative
+	&:before
+		content: ""
+		display: block
+		width: 100%
+		height: 100%
+		background: rgba(#0d3044, 0.6)
+		position: absolute
+		top: 0
+		left: 0
+	&>.wrapper
+		position: absolute
+		top: 55px
+		right: 0
+		left: 0
+		margin: auto
+.main-content-img
+	img 
+		display: block
+		width: 100%
+.banner-text-l
+	float: left
+	width: 740px
+	color: #fff
+	div
+		display: none
+		&.active
+			display: block
+	h3
+		font-size: 45px
+		line-height: 50px
+		position: relative
+		padding-right: 40px
+		padding-bottom: 33px
+		&:after
+			content: ''
+			width: 180px
+			position: absolute
+			bottom: 0
+			left: 0
+			height: 2px
+			background: #fff
+			display: block
+	p
+		font-size: 15px
+		line-height: 22px
+		display: block
+		margin-top: 26px
+		+opacity(0.9)
+	a 
+		width: 180px
+		padding: 16px 0 14px
+		display: block
+		border: 1px solid #fff
+		color: #fff 
+		text-decoration: none
+		text-align: center
+		margin-top: 25px
+		+transition(0.3s)
+		&:hover
+			background: #fff
+			color: #0d3044
+	span 
+		margin-top: 35px
+		margin-right: 40px
+		display: inline-block
+		font-family: 'Open Sans', sans-serif
+		&:before
+			font-size: 20px
+			color: #fff
+			display: inline-block
+			vertical-align: middle
+			margin-right: 10px
+	.calendar
+		&:before
+			+font-icon("calendar-with-a-clock-time-tools")
+	.attach
+		&:before
+			+font-icon("attach")
+.banner-text-r
+	float: right
+	width: 300px
+	div
+		margin-bottom: 38px
+		cursor: pointer
+		+opacity(0.65)
+		&.active
+			+opacity(1)
+	p 
+		border-left: 2px solid #fff 
+		padding-left: 22px
+		font-size: 17px
+		line-height: 20px
+		color: #fff
+
+
+
+
+
+
+
+
+
+

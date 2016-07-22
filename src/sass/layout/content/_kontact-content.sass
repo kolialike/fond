@@ -1,0 +1,43 @@
+.kontact-content
+	background: #eef4fb
+	+pie-clearfix
+	margin-top: 100px
+	padding-bottom: 25px
+.kontact-content-right
+	width: 580px
+	float: right
+	padding-left: 13px
+	+box-sizing(border-box)
+	p 
+		display: block
+		font-family: 'Open Sans', sans-serif
+		margin-top: 30px
+		font-size: 15px
+		line-height: 17px
+		color: #325a6e
+		&:before
+			color: #cbd6e3
+			display: inline-block
+			margin-right: 16px
+			font-size: 20px
+			width: 20px
+			vertical-align: bottom
+	.adress
+		&:before
+			+font-icon("map-pin-silhouette")
+	.phone
+		font-weight: 600
+		&:before
+			+font-icon("phone-receiver")
+	.mail
+		&:before
+			+font-icon("mail-black-envelope-symbol")
+	.socials
+		border: none
+		padding: 0
+		margin-top: 38px
+		a 
+			margin: 0
+			margin-right: 7px
+			&:before
+				font-size: 20px

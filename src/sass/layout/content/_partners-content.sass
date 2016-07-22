@@ -1,0 +1,27 @@
+.partners
+	margin-left: -20px
+	font-size: 0
+	line-height: 0
+.partners-item
+	margin-left: 20px
+	width: 280px
+	height: 160px
+	display: inline-block
+	text-align: center
+	border: 1px solid #e9eff5
+	+box-sizing(border-box)
+	margin-bottom: 20px
+	+transition(0.2s)
+	&:hover
+		img 
+			+opacity(0.6)
+	&:after
+		content: ''
+		width: 0
+		height: 100%
+		display: inline-block
+		vertical-align: middle
+	img
+		display: inline-block
+		vertical-align: middle
+		+transition(0.3s)
