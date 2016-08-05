@@ -1,0 +1,272 @@
+.shotstory-banner
+	clear: both
+	position: relative
+	font-size: 0
+	text-align: center
+	+pie-clearfix
+	height: 480px
+	+breakpoint(767px)
+		height: 400px
+	&:before
+		content: ""
+		display: block
+		width: 100%
+		height: 100%
+		background: rgba(#172d39, 0.67)
+		position: absolute
+		top: 0
+		left: 0
+		z-index: 1
+	&>.wrapper
+		position: absolute
+		top: 0px
+		right: 0
+		left: 0
+		bottom: 0
+		margin: auto
+		&:after
+			content: ''
+			display: inline-block
+			vertical-align: middle
+			height: 100%
+			width: 0
+	.back
+		position: relative 
+		display: block
+		text-align: center
+		font-size: 16px
+		line-height: 20px
+		color: #fff
+		z-index: 4
+		margin-top: 45px
+		margin-bottom: 50px
+		img 
+			margin-right: 10px
+			transform: rotate(180deg) translate(0px, -2px)
+
+		&:hover
+			+opacity(0.7)
+	.linerel
+		background: rgba(#fff, 0.35)
+		height: 15px
+		margin-bottom: 23px
+
+.shotstory-content
+	margin-top: 40px
+
+.shotstory-banner-img
+	position: absolute
+	height: 480px
+	+breakpoint(767px)
+		height: 400px
+	img 
+		display: block
+		width: 100%
+		height: 100%
+		object-fit: cover
+.shotstory-banner-text
+	position: relative
+	display: inline-block
+	z-index: 3
+	vertical-align: middle
+	width: 100%
+	max-width: 900px
+	h3
+		font-size: 48px
+		line-height: 52px
+		font-weight: 500
+		color: #fff
+		text-transform: uppercase
+		letter-spacing: 0.4px
+	p
+		font-size: 18px
+		color: #fff 
+		margin-top: 60px
+		letter-spacing: 0.4px
+
+.fulstory-content
+	.fulstory-content-container
+		margin-left: -2%
+		margin-top: 50px
+	.project-item
+		margin-bottom: 40px
+		width: 23%
+		margin-left: 2%
+
+.shotstory-content-item
+	padding-top: 10px
+	font-family: "Open Sans", sans-serif
+	h3 	
+		color: #2f343b
+		font-size: 36px
+		line-height: 40px
+		font-weight: 600
+		margin-top: 50px
+		margin-bottom: 40px
+	p 
+		padding-bottom: 32px
+		font-size: 16px
+		line-height: 24px
+		color: #2f343b
+.shotstory-content-item-img
+	height: 420px
+	display: block
+	img 
+		display: block
+		height: 100%
+		width: 100%
+		object-fit: cover
+.shotstory-banner
+	// width: 280/1200*100%
+	// margin-left: 20/1200*100%
+	display: block
+	text-decoration: none
+	// margin-bottom: 20px
+	overflow: hidden
+	// float: left
+	h5
+		margin-top: 30px
+		margin-bottom: 20px
+		height: 45px
+		color: #fff
+		font-size: 16px
+		line-height: 18px
+	p 
+		font-size: 16px
+		color: #ffffff
+		line-height: 16px
+		margin-bottom: 12px
+	span
+		font-size: 16px
+		line-height: 18px
+		font-family: 'Open Sans', sans-serif
+		font-weight: 600
+		color: #fff
+		small
+			font-weight: 400
+	.project-item-text-l	
+		float: left
+		text-align: left
+		span
+			color: #f98a0b
+	.project-item-text-r	
+		float: right
+		text-align: right	
+
+.report
+	+pie-clearfix
+	h4 
+		color: #24333d
+		font-size: 24px
+		line-height: 28px
+		margin-top: 70px
+		margin-bottom: 30px
+	h5
+		color: #24333d
+		font-size: 20px
+		line-height: 24px
+		margin-bottom: 25px
+		+breakpoint(767px)
+			padding-left: 10px
+.report-item-container
+	max-width: 820px	
+	width: 100%
+	+breakpoint(767px)
+		padding-left: 20px
+	a 
+		color: #0089d0
+		letter-spacing: 0.3px
+		font-size: 16px
+		line-height: 18px
+		margin-right: 50px
+		text-decoration: underline
+		margin-bottom: 25px
+		display: inline-block
+		+breakpoint(767px)
+			margin-right: 36px
+		img 
+			margin-right: 10px
+
+.report-item
+	+pie-clearfix
+	.event-content-item-img
+		height: 250px
+	.event-content
+		margin-left: -20/1200*100%
+		+breakpoint(767px)
+			margin-left: 0
+	.event-content-item
+		width: 380/1200*100%
+		margin-left: 20/1200*100%
+		margin-bottom: 20px
+		+breakpoint(1023px)
+			width: 580/1200*100%
+		+breakpoint(767px)
+			width: 100%
+			margin-left: 0
+		&:before
+			background: rgba(23, 24, 25, 0.51)
+		h3
+			position: absolute
+			font-size: 18px
+			line-height: 22px
+			color: #fff
+			bottom: 20px
+			left: 0
+			right: 0
+			padding: 0px 20px
+			z-index: 23	
+			+box-sizing(border-box)
+
+
+.kont
+	display: block
+	max-width: 600px
+	width: 100%
+	text-align: center
+	margin: auto
+	margin-top: 60px
+	margin-bottom: 30px
+	h4 
+		font-size: 30px
+		color: #24333d
+		text-transform: uppercase
+		line-height: 34px
+		margin-bottom: 30px
+	input
+		width: 100%
+		margin-bottom: 15px
+		display: block
+		outline: none
+		border: 1px solid #f2f3f4
+		background: #fafbfc
+		height: 45px
+		color: #81878d
+		font-size: 16px
+		line-height: 16px
+		padding: 0 20px
+		font-family: 'PT Sans', sans-serif
+		+border-radius(5px)
+		+box-sizing(border-box)
+		+placeholder 
+			color: #b1b4b6
+			font-size: 16px
+			line-height: 16px
+	input[type="submit"]
+		background: #009ee3
+		font-size: 18px
+		line-height: 18px
+		padding: 0 40px
+		color: #fff
+		max-width: 200px
+		+transition(0.3s)
+		display: block
+		margin: auto
+		margin-top: 35px
+		+breakpoint(1023px)
+			float: none
+			display: block
+			margin: auto
+
+		&:hover
+			background: #1d82ae

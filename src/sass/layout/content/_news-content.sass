@@ -1,0 +1,301 @@
+.news-content
+	+pie-clearfix
+	display: block
+.news-content-filter
+	background: #f5fafe
+	padding: 20px
+	+pie-clearfix
+	+box-sizing(border-box)
+	margin: 20px 0
+	+breakpoint(1120px)
+		padding: 15px 10px
+	.filter-category
+		float: left
+		margin-right: 20px
+		position: relative
+		+breakpoint(1120px)
+			width: 29%
+			margin-right: 0
+		+breakpoint(767px)
+			width: 100%
+			display: block
+			float: none
+		a
+			color: #516372
+			display: inline-block
+			font-size: 15px
+			line-height: 17px
+			text-decoration: none
+			background: #dee9f2
+			padding: 15px 20px 12px 20px
+			+box-sizing(border-box)
+			// max-width: 230px
+			width: 100%
+			position: relative
+			font-weight: 500
+			min-width: 200px
+			&:after
+				content: ''
+				position: absolute
+				right: 15px
+				top: 21px
+				width: 0
+				height: 0
+				border-left: 5px solid transparent
+				border-right: 5px solid transparent
+				border-top: 5px solid #516372
+		.filter-category-submenu
+			+opacity(0)
+			max-height: 0px
+			position: absolute
+			top: 44px
+			left: 0
+			+breakpoint(1120px)
+				
+.filter-calendar
+	float: left
+	position: relative
+	+breakpoint(1120px)
+		float: right 
+		width: 69%
+		text-align: right
+	+breakpoint(767px)
+		width: 100%
+		display: block
+		float: none
+		padding-top: 20px
+	a
+		color: #516372
+		display: inline-block
+		font-size: 15px
+		line-height: 17px
+		text-decoration: none
+		padding: 15px 45px 12px 0px
+		+box-sizing(border-box)
+		// max-width: 235px
+		position: relative
+		font-weight: 500
+		+breakpoint(767px)
+			display: none
+		&:after
+			+font-icon("calendar")
+			position: absolute
+			right: 15px
+			top: 14px
+			font-size: 15px
+
+	.filter-calendar-submenu
+		+opacity(0)
+		max-height: 0px
+		position: absolute
+		top: 44px
+		left: 0
+		+breakpoint(767px)
+			top: 64px
+	span
+		position: relative
+		display: inline-block
+		width: 15px
+		margin: 0 3px
+		+breakpoint(767px)
+			margin: 0 auto
+			width: 2%
+			display: block
+		&:before
+			position: absolute
+			content: ""
+			display: block
+			width: 15px
+			height: 2px
+			top: -2px
+			left: 0
+			background: #dee9f2
+			+breakpoint(767px)
+				top: 24px
+				width: 100%
+
+.filter-category-submenu-open
+	.news-content-filter .filter-category
+		.filter-category-submenu
+			max-height: 1000px
+			opacity: 1
+			width: 100%
+			z-index: 23
+// .filter-calendar-submenu-open
+// 	.news-content-filter .filter-calendar
+// 		.filter-calendar-submenu
+// 			max-height: 1000px
+// 			opacity: 1
+// 			width: 100%
+// 			z-index: 23
+.news-content-filter .filter-category-submenu 
+	a
+		background: #d7f1ff
+
+.filter-category-submenu
+	a
+		&:after
+			display: none
+
+.filter-calendar
+	label
+		width: 100% 
+		clear: both    
+		background: #dee9f2
+		box-sizing: border-box
+		display: block
+
+.filter-calendar
+	input
+		border: none
+		outline: none
+		background: #dee9f2
+		padding: 15px 0px 12px 10px
+		font-size: 15px
+		line-height: 15px
+		+breakpoint(767px)
+			width: 42.6%
+			font-size: 12px
+			&:nth-of-type(1)
+				float: left
+
+// .filter-calendar
+// 	opacity: 0
+// 	max-height: 0px
+// 	position: absolute
+// 	top: 44px
+// 	left: 0
+// 	z-index: 1
+
+.filter:before
+	content: ""
+	display: table
+	clear: both
+
+.filter-search
+	float: right
+	width: 360px
+	height: 44px
+	position: relative
+	z-index: 10
+	+breakpoint(1120px)
+		float: none
+		display: block
+		width: 100%
+		padding-top: 20px
+		clear: both
+	.search-popup
+		padding: 0
+		width: 100%
+		input[type="search"]
+			width: 100%
+			min-width: 100%
+			height: 44px
+		.search-submit
+			height: 44px
+			&:before
+				top: 13px
+				font-size: 18px
+				color: #bfccd6
+
+.news-content-container
+	display: block
+	+pie-clearfix
+	margin-left: -20/1200*100%	
+	+breakpoint(767px)
+		margin-left: 0
+.news-content-container-more
+	font-size: 16px
+	line-height: 20px 
+	color: #516372
+	margin-left: 20px
+	display: block
+	text-align: center
+	max-width: 220px
+	position: relative
+	margin: 60px auto 50px
+	&:hover
+		color: #000
+	img
+		position: absolute
+		bottom: -40px
+		right: 0
+		left: 0
+.news-content-container-item
+	width: 380/1200*100%
+	margin-left: 20/1200*100%
+	float: left
+	margin-bottom: 20px
+	+breakpoint(1120px)
+		width: 580/1200*100%
+	+breakpoint(767px)
+		width: 100%
+		margin-left: 0
+		
+	&:hover
+		background: #0089d0
+		.news-content-container-item-text
+			border: 1px solid #0089d0
+			p 
+				color: #fff
+			h5
+				color: #bbd9f6
+			span 
+				color: #85b5e4
+	.news-content-container-item-img
+		height: 230px
+		position: relative
+		&:before
+			content: ''
+			display: block
+			width: 100%
+			height: 100%
+			position: absolute
+			right: 0
+			left: 0
+			bottom: 0
+			top: 0
+			// background-color: rgba(#000, 0.5)
+			+box-shadow(inset 0px -162px 310px -21px rgba(0, 0, 0, 1))
+		img 
+			height: 100%
+			width: 100%
+			display: block
+			object-fit: cover
+		h3
+			position: absolute
+			bottom: 15px
+			left: 0
+			right: 0
+			padding: 0 30px
+			+box-sizing(border-box)
+			font-size: 18px
+			line-height: 20px 
+			color: #f1f7fc
+			z-index: 2
+	.news-content-container-item-text
+		padding: 30px 30px 25px
+		+box-sizing(border-box)
+		border: 1px solid #e2ecf6
+		margin-top: -1px
+		+transition(0.3s)
+		p
+			color: #333639
+			font-size: 14px
+			line-height: 16px
+			+transition(0.3s)
+		h5 
+			font-size: 16px
+			line-height: 18px
+			color: #0089d0
+			margin-top: 35px
+			margin-bottom: 10px
+			+transition(0.3s)
+		span 
+			text-transform: uppercase
+			color: #8c9cab
+			font-size: 14px
+			line-height: 16px
+			font-family: "Open Sans", sans-serif
+			+transition(0.3s)
+	

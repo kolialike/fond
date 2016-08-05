@@ -1,0 +1,75 @@
+.news-banner
+	clear: both
+	position: relative
+	font-size: 0
+	text-align: center
+	+pie-clearfix
+	height: 480px
+	+breakpoint(767px)
+		height: 400px
+	&:before
+		content: ""
+		display: block
+		width: 100%
+		height: 100%
+		background: rgba(#172d39, 0.67)
+		position: absolute
+		top: 0
+		left: 0
+		z-index: 1
+	&>.wrapper
+		position: absolute
+		top: 0px
+		right: 0
+		left: 0
+		bottom: 0
+		margin: auto
+		&:after
+			content: ''
+			display: inline-block
+			vertical-align: middle
+			height: 100%
+			width: 0
+	a
+		position: absolute
+		bottom: 75px
+		left: 0
+		right: 0
+		font-size: 17px
+		line-height: 20px
+		color: #fff
+		border: 1px solid #fff
+		padding: 15px 40px 14px
+		z-index: 4
+		display: inline-block
+		width: 230px
+		margin: auto
+		+breakpoint(767px)
+			padding: 15px 25px 14px
+		&:hover
+			background: #fff
+			color: #0089d0
+.news-banner-img
+	position: absolute
+	height: 480px
+	+breakpoint(767px)
+		height: 400px
+	img 
+		display: block
+		width: 100%
+		height: 100%
+		object-fit: cover
+.news-banner-text
+	position: relative
+	display: inline-block
+	z-index: 3
+	vertical-align: middle
+	width: 100%
+	h3
+		font-size: 48px
+		line-height: 52px
+		font-weight: 500
+		color: #fff
+
+
+

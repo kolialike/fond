@@ -1,5 +1,63 @@
-//= partials/head.html
-//= partials/header.html
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Base</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
+	<link rel="stylesheet" type="text/css" href="../css/screen.css" />
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:700,400,600' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Raleway:400,600,700' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="../js/vendor.js"></script>
+	<script type="text/javascript" src="../js/main.js"></script>
+</head>
+<body>
+	<div class="global-wrapper">
+<div class="search-popup-container">
+	<form action="" class="search-popup">
+		<div class="search">
+			<input type="search">
+			<div class="search-submit">
+				<input type="submit" value="">
+			</div>
+		</div>
+	</form>
+</div>
+<header id="header">
+	<div class="wrapper">
+		<a href="#" class="logo"><img src="../img/logo.png" alt=""></a>
+		<div class="header-top">
+			<nav class="header-top-nav">
+				<ul>
+					<li><a href="#">Новини</a></li>     
+					<li><a href="#">Партнери</a></li>      
+					<li><a href="#">Контакти</a></li>
+				</ul>
+			</nav>
+			<div class="socials">
+				<a class="vk" href="#"></a>
+				<a class="rss" href="#"></a>
+				<a class="twitter" href="#"></a>
+				<a class="facebook" href="#"></a>
+				<a class="google" href="#"></a>
+			</div>
+			<div class="language">
+				<a href="#"><img src="../img/uk.png" alt=""></a>
+				<a href="#"><img src="../img/en.png" alt=""></a>
+			</div>
+			<a href="#" class="header-top-buttom">Підтримати фонд</a>
+		</div>
+		<div class="header-bottom">
+			<ul class="header-bottom-menu">
+				<li><a href="#">Про фонд</a></li>         
+				<li><a href="#">Програми та проекти</a></li>         
+				<li><a href="#">Варіанти допомоги</a></li>         
+				<li><a href="#">Звітність фонду</a></li>
+			</ul>
+			<a href="#" class="header-bottom-search"></a>
+		</div>
+	</div>
+</header>
 		<section class="main-content">
 			<div class="main-content-img">
 				<img src="../img/banner.jpg" alt="">
@@ -54,55 +112,54 @@
 		<section class="flex-content-container">
 			<div class="wrapper">
 				<h3>Актуальні новини</h3>
-				<div class="flex-content">
-					<a href="#" class="flex-content-item">
-						<div class="flex-content-text">
-							<h4>«Українські отамани» перемогли команду з Туреччини</h4>
-							<div class="flex-content-text-bottom">
-								<p>Спортивні події</p>
-								<span>29.06.2016</span>
-							</div>
-						</div>
-						<div class="flex-content-img">
-							<img src="../img/flex-img1.jpg" alt="">
-						</div>
-					</a>
-					<a href="#" class="flex-content-item">
-						<div class="flex-content-img">
-							<img src="../img/flex-img2.jpg" alt="">
-						</div>
-						<div class="flex-content-text">
-							<h4>Фонд Борзова запускає новий глобальний проект “Діти спорту”</h4>
-							<div class="flex-content-text-bottom">
-								<p>Новини фонду</p>
-								<span>29.06.2016</span>
-							</div>
-						</div>
-					</a>
-					<a href="#" class="flex-content-item">
-						<div class="flex-content-text">
-							<h4>“Тур де Франс”, другий етап: повернення Саґана, чергова втрата часу Контадором</h4>
-							<div class="flex-content-text-bottom">
-								<p>Новини спорту</p>
-								<span>29.06.2016</span>
-							</div>
-						</div>
-						<div class="flex-content-img">
-							<img src="../img/flex-img3.jpg" alt="">
-						</div>
-					</a>
-					<a href="#" class="flex-content-item">
-						<div class="flex-content-img">
-							<img src="../img/flex-img4.jpg" alt="">
-						</div>
-						<div class="flex-content-text">
-							<h4>Збірна України не вийшла у чвертьфінал Euro 2016</h4>
-							<div class="flex-content-text-bottom">
-								<p>Новини спорту</p>
-								<span>29.06.2016</span>
-							</div>
-						</div>
-					</a>
+
+				<div class="swiper-container">
+				    <div class="swiper-wrapper">
+				        <div class="swiper-slide">
+							<a href="#" class="flex-content-item">
+								<div class="flex-content-img">
+									<img src="../img/flex-img1.jpg" alt="">
+								</div>
+								<div class="flex-content-text">
+									<h4>«Українські отамани» перемогли команду з Туреччини</h4>
+									<div class="flex-content-text-bottom">
+										<p>Спортивні події</p>
+										<span>29.06.2016</span>
+									</div>
+								</div>
+							</a>
+				        </div>
+				        <div class="swiper-slide">
+							<a href="#" class="flex-content-item">
+								<div class="flex-content-img">
+									<img src="../img/flex-img2.jpg" alt="">
+								</div>
+								<div class="flex-content-text">
+									<h4>Фонд Борзова запускає новий глобальний проект “Діти спорту”</h4>
+									<div class="flex-content-text-bottom">
+										<p>Новини фонду</p>
+										<span>29.06.2016</span>
+									</div>
+								</div>
+							</a>
+				        </div>
+				        <div class="swiper-slide">
+							<a href="#" class="flex-content-item">
+								<div class="flex-content-img">
+									<img src="../img/flex-img3.jpg" alt="">
+								</div>
+								<div class="flex-content-text">
+									<h4>“Тур де Франс”, другий етап: повернення Саґана, чергова втрата часу Контадором</h4>
+									<div class="flex-content-text-bottom">
+										<p>Новини спорту</p>
+										<span>29.06.2016</span>
+									</div>
+								</div>
+							</a>
+				        </div>
+				    </div>
+				    <div class="swiper-button-prev"></div>
+				    <div class="swiper-button-next"></div>
 				</div>
 			</div>
 		</section>
@@ -263,4 +320,12 @@
 				</div>
 			</div>
 		</section>
-//= partials/footer.html
+	<footer id="footer">
+		<div class="wrapper">
+			<p>&copy;2016 “Фонд Борзова”</p>
+			<p class="footer-r">Розроблено в <a href="#">OneHub.com.ua</a></p>
+		</div>
+	</footer>
+</div>
+</body>
+</html>

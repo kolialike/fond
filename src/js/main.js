@@ -31,4 +31,17 @@ jQuery(function($){
         event.preventDefault();
         body.addClass('search-open')
     });
+
+    var filterCategory = $(".filter-category > a");
+    filterCategory.on('click', function(event) {
+        event.preventDefault();
+        body.toggleClass("filter-category-submenu-open");
+        body.removeClass('filter-calendar-submenu-open')
+    });
+    // var filterCalendar = $(".filter-calendar > a");
+    // filterCalendar.on('click', function(event) {
+    //     event.preventDefault();
+    //     body.toggleClass("filter-calendar-submenu-open");
+    //     body.removeClass('filter-category-submenu-open')
+    // });
 });

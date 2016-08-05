@@ -1,0 +1,115 @@
+.info-banner
+	clear: both
+	position: relative
+	font-size: 0
+	text-align: center
+	+pie-clearfix
+	height: 480px
+	+breakpoint(767px)
+		height: 400px
+	&:before
+		content: ""
+		display: block
+		width: 100%
+		height: 100%
+		background: rgba(#172d39, 0.67)
+		position: absolute
+		top: 0
+		left: 0
+		z-index: 1
+	&>.wrapper
+		position: absolute
+		top: 0px
+		right: 0
+		left: 0
+		bottom: 0
+		margin: auto
+		&:after
+			content: ''
+			display: inline-block
+			vertical-align: middle
+			height: 100%
+			width: 0
+	.back
+		position: absolute
+		bottom: 20px
+		left: 20px
+		font-size: 16px
+		line-height: 20px
+		color: #fff
+		z-index: 4
+		display: inline-block
+		img 
+			margin-right: 10px
+		&:hover
+			+opacity(0.7)
+	.next
+		position: absolute
+		bottom: 20px
+		right: 20px
+		font-size: 16px
+		line-height: 20px
+		color: #fff
+		z-index: 4
+		display: inline-block
+		&:after
+			content: ""
+			display: block
+			width: 100%
+			position: absolute
+			bottom: -2px
+			left: 0
+			height: 1px
+			background: #fff
+			+transition(0.3s)
+		&:hover
+			color: #0089d0
+			&:after
+				background: #0089d0
+.info-banner-img
+	position: absolute
+	height: 480px
+	+breakpoint(767px)
+		height: 400px
+	img 
+		display: block
+		width: 100%
+		height: 100%
+		object-fit: cover
+.info-banner-text
+	position: relative
+	display: inline-block
+	z-index: 3
+	vertical-align: middle
+	width: 100%
+	max-width: 685px
+	h3
+		font-size: 48px
+		line-height: 52px
+		font-weight: 500
+		color: #fff
+
+
+.info-content-item
+	padding-top: 10px
+	font-family: "Open Sans", sans-serif
+	h3 	
+		color: #2f343b
+		font-size: 36px
+		line-height: 40px
+		font-weight: 600
+		margin-top: 50px
+		margin-bottom: 40px
+	p 
+		padding-bottom: 32px
+		font-size: 16px
+		line-height: 24px
+		color: #2f343b
+.info-content-item-img
+	height: 420px
+	display: block
+	img 
+		display: block
+		height: 100%
+		width: 100%
+		object-fit: cover
